@@ -1,0 +1,26 @@
+{
+    "name": "theryanhowell/netdata-bundle",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ryan Howell",
+            "email": "contact@rhowell.io",
+            "homepage": "https://rhowell.io",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheRyanHowell\\NetdataBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "symfony/framework-bundle": "^3.0|^4.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2",
+        "phpunit/phpunit": "^8"
+    }
+}
