@@ -21,7 +21,8 @@ class Netdata
         string $url,
         bool $authenticated = false,
         ?string $username = null,
-        ?string $password = null
+        ?string $password = null,
+        float $timeout = 2.0
     ) {
         $this->url = $url;
         $this->authenticated = $authenticated;
@@ -32,7 +33,7 @@ class Netdata
             // Base URI is used with relative requests
             'base_uri' => $this->url,
             // You can set any number of default request options.
-            'timeout' => 2.0,
+            'timeout' => $timeout,
         ];
 
         if (true === $this->authenticated) {
